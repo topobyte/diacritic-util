@@ -2,7 +2,7 @@ wrapper {
     gradleVersion = '6.5.1'
 }
 
-apply plugin: 'java'
+apply plugin: 'java-library'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
@@ -28,9 +28,9 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile 'com.slimjars.trove4j:trove4j-char-object-hash-map:1.0.1'
+    api 'com.slimjars.trove4j:trove4j-char-object-hash-map:1.0.1'
 
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 }
 
 java {
